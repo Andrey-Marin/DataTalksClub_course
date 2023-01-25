@@ -5,19 +5,21 @@
 Using WSL, Descktop Docker, VScode, Postgres
 
 
-Additionally info:
-  Green taxi data
+Additionally info: \
+ 
+  Green taxi data \
 wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-01.csv.gz
 
-  Green taxi discription
+  Green taxi discription \
 https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_green.pdf
 
-  Website TLC
+  Website TLC \
 https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
 
 
 ### Connecting localhost Postgres
+Create docker images, if docker images dont exist and run: 
 
 docker run -it \
   -e POSTGRES_USER="root" \
@@ -28,6 +30,7 @@ docker run -it \
   postgres:13
 
 ### Connecting pgcli to the localhost Postgres
+pip instal pgcli \
 
 pgcli -h localhost -p 5432 -u root -d ny_taxi
 
