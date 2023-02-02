@@ -1,2 +1,2 @@
 # dezoomcamp_2023
- Repository for homework
+ Repository with notes, code and homework
